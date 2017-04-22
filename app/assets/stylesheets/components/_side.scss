@@ -1,13 +1,14 @@
 .side-contents {
   height: 100%;
   width: 300px;
+  float: left;
   &__user {
     background-color: #253141;
     &__username {
       height: 90px;
       font-weight: bold;
       font-size: 16px;
-      color: #ffffff;
+      color: #fff;
       padding: 0 20px;
     }
     &__icon {
@@ -17,7 +18,7 @@
   &__group {
     height: 600px;
     background-color: #2f3e51;
-    color: #ffffff;
+    color: #fff;
     h3 {
       font-size: 15px;
       padding: 20px 20px 5px 20px;
@@ -26,5 +27,26 @@
       font-size: 11px;
       padding: 0 20px 20px;
     }
+  }
+}
+
+.main-contents {
+  float: left;
+  width: calc(100% - 300px);
+
+  &__group-name {
+    height: 90px;
+    background-color: #fafafa;
+    border-bottom: solid;
+  }
+
+  &__messages {
+    height: 510px;
+    background-color: #fafafa;
+  }
+
+  &__send-message {
+    height: 90px;
+    background-color: #cacaca;
   }
 }
