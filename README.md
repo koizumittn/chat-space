@@ -2,7 +2,6 @@
 
 # DB設計
 
-
 ## users table
 |Column|Type|Options|
 |---|---|---|
@@ -36,4 +35,17 @@
 - belongs_to :user
 - belongs_to :group
 
+## messages table
+|Column|Type|Options|
+|---|---|---|
+|text|string|null: false|
+|user※2|references|false, foreign_key: true|
+|group※3|references|false, foreign_key: true|
+
+### Association
+- belongs_to :user
+- belongs_to :group
+
 ※1: created_atおよびupdated_atカラム(どちらもdatetime型)を持つ。
+※2: マイグレーションファイルではこのように記述するが、実際のカラム名はuser_idとなる。
+※3: マイグレーションファイルではこのように記述するが、実際のカラム名はgroup_idとなる。
