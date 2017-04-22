@@ -26,4 +26,14 @@
 - has_many :users, through: :user_groups
 - has_many :messages
 
+## user_groups table
+|Column|Type|Options|
+|---|---|---|
+|user※2|references|null: false, foreign_key: true|
+|group※3|references|null: false, foreign_key: true|
+
+### Association
+- belongs_to :user
+- belongs_to :group
+
 ※1: created_atおよびupdated_atカラム(どちらもdatetime型)を持つ。
