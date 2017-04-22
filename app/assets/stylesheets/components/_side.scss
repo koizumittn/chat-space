@@ -53,6 +53,21 @@
   &__messages {
     height: 510px;
     background-color: #fafafa;
+    padding: 26px 40px 0 40px;
+    p {
+      font-size: 14px;
+      color: #434A54;
+      padding-bottom: 30px;
+    }
+    &--name {
+      font-size: 16px;
+      font-weight: bold;
+      color: #434A54;
+    }
+    &--datetime {
+      font-size: 12px;
+      color: #999;
+    }
   }
 
   &__send-message {
