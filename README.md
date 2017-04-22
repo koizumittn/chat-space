@@ -18,7 +18,6 @@
 |Column|Type|Options|
 |---|---|---|
 |name|string|null: false|
-|name|string|null: false|
 |※1|timestamps||
 
 ### Association
@@ -38,7 +37,8 @@
 ## messages table
 |Column|Type|Options|
 |---|---|---|
-|text|string|null: false|
+|text|string||
+|image|text||
 |user※2|references|false, foreign_key: true|
 |group※3|references|false, foreign_key: true|
 
