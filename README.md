@@ -46,6 +46,6 @@
 - belongs_to :user
 - belongs_to :group
 
-※1: created_atおよびupdated_atカラム(どちらもdatetime型)を持つ。
-※2: マイグレーションファイルではこのように記述するが、実際のカラム名はuser_idとなる。
-※3: マイグレーションファイルではこのように記述するが、実際のカラム名はgroup_idとなる。
+※1: created_atおよびupdated_atカラム(どちらもdatetime型)を持つ。  
+※2: マイグレーションファイルではこのように記述するが、実際のカラム名はuser_idとなる。  
+※3: マイグレーションファイルではこのように記述するが、実際のカラム名はgroup_idとなる。  
