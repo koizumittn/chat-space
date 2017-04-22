@@ -1,5 +1,17 @@
 == README
 
+# DB設計
+
+
+## users table
+|Column|Type|Options|
+|---|---|---|
+|name|string|null: false|
+
+### Association
+
+
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
