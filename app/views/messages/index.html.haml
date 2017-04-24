@@ -22,7 +22,6 @@
       %form{action: "/edit", method: "get"}
         %input{type: "submit", value: "Edit"}
 
-
     .main-contents__messages
       %span.main-contents__messages--name
         Tetsunosuke Koizumi
@@ -39,7 +38,7 @@
 
     .main-contents__send-message
       %form{action: "/", method: "post"}
-      .main-contents__send-message--form
+        %input{type: "text", placeholder: "Type message"}
 
       .main-contents__send-message--button
         Send
