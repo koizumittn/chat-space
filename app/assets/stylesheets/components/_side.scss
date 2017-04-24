@@ -4,6 +4,7 @@
   float: left;
   &__user {
     background-color: #253141;
+    height: 12vh;
     &__username {
       height: 55px;
       font-weight: bold;
@@ -16,7 +17,7 @@
     }
   }
   &__group {
-    height: 600px;
+    height: 88vh;
     background-color: #2f3e51;
     color: #fff;
     h3 {
@@ -32,10 +33,10 @@
 
 .main-contents {
   float: left;
-  width: calc(100% - 300px);
+  width: calc(100vw - 300px);
   &__group-name {
     position: relative;
-    height: 90px;
+    height: 12vh;
     background-color: #fafafa;
     border-bottom: thin solid #eee;
     padding: 0 40px;
@@ -61,9 +62,9 @@
   }
 
   &__messages {
-    height: 484px;
+    height: calc(76vh - 46px);
     background-color: #fafafa;
-    padding: 26px 40px 0 40px;
+    padding: 46px 40px 0 40px;
     p {
       font-size: 14px;
       color: #434A54;
@@ -82,7 +83,7 @@
 
   &__send-message {
     position: relative;
-    height: 90px;
+    height: 12vh;
     background-color: #cacaca;
     padding: 0 40px;
     &--form {
