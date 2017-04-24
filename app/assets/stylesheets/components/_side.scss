@@ -5,11 +5,11 @@
   &__user {
     background-color: #253141;
     &__username {
-      height: 90px;
+      height: 55px;
       font-weight: bold;
       font-size: 16px;
       color: #fff;
-      padding: 0 20px;
+      padding: 35px 20px 0;
     }
     &__icon {
 
@@ -51,7 +51,7 @@
   }
 
   &__messages {
-    height: 510px;
+    height: 484px;
     background-color: #fafafa;
     padding: 26px 40px 0 40px;
     p {
@@ -71,7 +71,27 @@
   }
 
   &__send-message {
+    position: relative;
     height: 90px;
     background-color: #cacaca;
+    padding: 0 40px;
+    &--form {
+      position: relative;
+      top: 20px;
+      left: 10px;
+      height: 50px;
+      background-color: #fff;
+      width: calc(100% - 150px);
+    }
+
+    &--button {
+      position: absolute;
+      top: 20px;
+      left: 1000px;
+      height: 50px;
+      width: 100px;
+      background-color: #38aff0;
+
+    }
   }
 }
