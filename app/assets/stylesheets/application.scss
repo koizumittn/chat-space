@@ -1,11 +1,9 @@
 @charset 'utf-8';
 
+@import "font-awesome";
 @import "./base/reset";
 @import "./base/clearfix";
 @import "./components/side";
 @import "./components/main";
-@import "./wrapper/wrapper"
+@import "./wrapper/wrapper";
 
-/*
- *= require font-awesome
- */

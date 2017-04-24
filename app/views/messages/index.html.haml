@@ -2,8 +2,11 @@
   .side-contents
     .side-contents__user
       .side-contents__user__username
-        %p Tetsunosuke Koizumi
+        Tetsunosuke Koizumi
+
       .side-contents__user__icon
+        = fa_icon "edit"
+        = fa_icon "gear"
 
     .side-contents__group
       %h3 Room1
@@ -16,7 +19,7 @@
     .main-contents__group-name
       %h3 Sampleグループ
       %p MEMBER: Tetsunosuke Koizumi
-      %form{action: "/", method: "post"}
+      %form{action: "/edit", method: "get"}
         %input{type: "submit", value: "Edit"}
 
 
@@ -35,6 +38,7 @@
         メッセージ
 
     .main-contents__send-message
+      %form{action: "/", method: "post"}
       .main-contents__send-message--form
 
       .main-contents__send-message--button

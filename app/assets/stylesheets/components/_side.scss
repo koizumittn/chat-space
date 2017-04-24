@@ -4,16 +4,17 @@
   float: left;
   &__user {
     background-color: #253141;
-    height: 12vh;
+    height: 8vh;
+    color: #fff;
+    padding: 4vh 20px 0;
     &__username {
       height: 55px;
+      float: left;
       font-weight: bold;
       font-size: 16px;
-      color: #fff;
-      padding: 35px 20px 0;
     }
     &__icon {
-
+      float: right;
     }
   }
   &__group {
