@@ -1,3 +1,82 @@
 .main-contents {
+  float: left;
+  width: calc(100vw - 300px);
+  &__group-name {
+    position: relative;
+    height: 12vh;
+    background-color: #fafafa;
+    border-bottom: thin solid #eee;
+    padding: 0 40px;
+    h3 {
+      font-size: 20px;
+      color: #333;
+      padding: 35px 0 15px 0;
+    }
+    p {
+      font-size: 12px;
+      color: #999;
+    }
+    input {
+      position: absolute;
+      top: 20px;
+      right: 40px;
+      height: 40px;
+      border: thin solid #38aef0;
+      background-color: #fafafa;
+      padding: 5px 20px;
+      font-weight: bold;
+      color: #38aef0;
+    }
+  }
 
+  &__messages {
+    height: calc(76vh - 46px);
+    background-color: #fafafa;
+    padding: 46px 40px 0 40px;
+    p {
+      font-size: 14px;
+      color: #434A54;
+      padding-bottom: 30px;
+    }
+    &--name {
+      font-size: 16px;
+      font-weight: bold;
+      color: #434A54;
+    }
+    &--datetime {
+      font-size: 12px;
+      color: #999;
+    }
+  }
+
+  &__send-message {
+    position: relative;
+    height: 12vh;
+    background-color: #cacaca;
+    padding: 0 40px;
+    input[type=text] {
+      position: relative;
+      top: 20px;
+      left: 10px;
+      height: 50px;
+      background-color: #fff;
+      width: calc(100% - 150px);
+      font-size: 16px;
+    }
+      input::-webkit-input-placeholder {
+        padding-left: 10px;
+        color: #434a54;
+      }
+    input[type=submit] {
+      position: absolute;
+      top: 20px;
+      right: 40px;
+      height: 50px;
+      width: 100px;
+      background-color: #38aff0;
+      text-align: center;
+      color: #fff;
+      font-weight: bold;
+    }
+  }
 }
