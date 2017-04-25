@@ -96,8 +96,11 @@
       background-color: #fff;
       width: calc(100% - 150px);
       font-size: 16px;
-      color: #434a54;
     }
+      input::-webkit-input-placeholder {
+        padding-left: 10px;
+        color: #434a54;
+      }
     input[type=submit] {
       position: absolute;
       top: 20px;
