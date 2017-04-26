@@ -1,0 +1,42 @@
+.wrapper
+  .side-contents
+    .side-contents__user
+      .side-contents__user__username
+        Tetsunosuke Koizumi
+
+      .side-contents__user__icon
+        = fa_icon "edit"
+        = fa_icon "gear"
+
+    .side-contents__group
+      %h3 Room1
+      %p メッセージ
+
+      %h3 Room2
+      %p メッセージ
+
+  .main-contents
+    .main-contents__group-name
+      %h3 Sampleグループ
+      %p MEMBER: Tetsunosuke Koizumi
+      %form{action: "/edit", method: "get"}
+        %input{type: "submit", value: "Edit"}
+
+    .main-contents__messages
+      %span.main-contents__messages--name
+        Tetsunosuke Koizumi
+      %span.main-contents__messages--datetime
+        2017/04/23 06:30:15
+      %p
+        メッセージ
+      %span.main-contents__messages--name
+        Tetsunosuke Koizumi
+      %span.main-contents__messages--datetime
+        2017/04/23 06:30:15
+      %p
+        メッセージ
+
+    .main-contents__send-message
+      %form{action: "/", method: "post"}
+        %input{type: "text", placeholder: "Type message"}
+        %input{type: "submit", value: "Send"}
