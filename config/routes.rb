@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-  get '/users/edit' => 'users#edit'
-  devise_for :users
+  devise_for :users, :controllers => {
+    :registrations => 'users'
+  }
   root 'messages#index'
 end
 
