@@ -14,8 +14,24 @@
             = f.text_field :name, autofocus: true
         .field
           .field-label
-            = f.label :email
+            = f.label "メールアドレス"
           .field-input
             = f.email_field :email
+        .field
+          .field-label
+            = f.label "パスワード"
+          .field-input
+            = f.password_field :password
+        .field
+          .field-label
+            = f.label "確認用パスワード"
+          .field-input
+            = f.password_field :confirm_password
+        .field
+          .field-label
+            = f.label "現在のパスワード"
+          .field-input
+            = f.password_field :current_password
         .actions
           = f.submit "Update", class: 'btn'
+
