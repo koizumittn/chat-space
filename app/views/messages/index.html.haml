@@ -6,7 +6,8 @@
 
       .side-contents__user__icon
         = fa_icon "edit"
-        = fa_icon "gear"
+        = link_to edit_user_registration_path, style: "color:white;" do
+          = fa_icon "gear"
 
     .side-contents__group
       %h3 Room1
