@@ -15,9 +15,7 @@ class UsersController < Devise::RegistrationsController
   private
   def update_params
     params.require(:user)
-    .permit(:name, :email, :password, :current_password)
-    .merge(password_confirmation: params.require(:user)[:confirm_password])
+    .permit(:name, :email, :password, :password_confirmation, :current_password)
   end
-
 end
 
